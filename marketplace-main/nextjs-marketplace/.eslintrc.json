@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "standard",
+    "plugin:@next/next/recommended"
+  ],
+  "rules": {
+    "@next/next/no-document-import-in-page": "off"
+  }
+}

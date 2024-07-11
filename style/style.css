@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/bg_1.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-container p:first-of-type {
+  color: gray;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.custom-hr {
+  color: gray;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  width: 30%;
+}
+
+.custom-hr::before,
+.custom-hr::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid lightgray;
+}
+
+.custom-hr:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.custom-hr:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+form {
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+}

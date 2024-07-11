@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+
+.home-button.ant-btn {
+    border-radius: 14px;
+    border: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border-radius: 76px !important;
+    height: auto !important;
+    min-width: 90px !important;
+    font-weight: 500 !important;
+    padding: 10px !important;
+
+    .icon {
+        display: initial;
+        color: white;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &:disabled {
+        cursor: not-allowed !important;
+    }
+
+    &.ant-btn-primary {
+        background: $theme-cyan 0% 0% no-repeat padding-box;
+        color: #000;
+
+        &:hover {
+            background: $theme-cyan 0% 0% no-repeat padding-box !important;
+            color: #000 !important;
+        }
+    }
+
+    &.ant-btn-default {
+        background: inherit;
+        border: 1px solid #36425C;
+        color: #B8BABF;
+
+        &:hover {
+            background: inherit !important;
+            color: #fff !important;
+            border: 1px solid #B8BABF !important;
+        }
+    }
+}

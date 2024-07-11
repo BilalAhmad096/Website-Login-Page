@@ -1,0 +1,103 @@
+@import '@/styles/variables.scss';
+
+.login {
+    background: $theme-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        max-width: $max-content-display-length;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .login-form {
+        background: $light-blue;
+        padding: 86px 68px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0px 8px 48px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        .title {
+            color: #fff;
+            margin-top: 0px;
+        }
+
+        .description {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+
+            .input-label {
+                margin-bottom: 10px;
+                color: #fff;
+            }
+
+            .forgot-text {
+                color: #70767E;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $theme-cyan;
+                }
+            }
+        }
+
+        .home-button {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .signup-text {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                color: #fff;
+                font-weight: 600;
+
+                &:hover {
+                    color: $theme-cyan;
+                }
+            }
+        }
+
+        .home-icon {
+            color: #fff;
+            padding-top: 20px;
+            font-size: 12px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: -20px !important;
+            svg{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .login {
+        .container {
+            padding: 0 10px;
+        }
+
+        .login-form {
+            min-width: auto !important;
+            padding: 50px 30px;
+        }
+    }
+}

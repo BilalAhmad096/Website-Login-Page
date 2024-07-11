@@ -1,0 +1,194 @@
+@import '@/styles/variables.scss';
+
+.header-search-input {
+    height: 40px;
+    border-radius: 26px !important;
+    background-color: $theme-background-blue !important;
+    box-shadow: 0px 3px 20px #00000014 !important;
+    border: 1px solid #303853 !important;
+
+    .ant-input-group>.ant-input-affix-wrapper:not(:last-child) .ant-input {
+        padding-left: 10px;
+        outline: none;
+    }
+
+    .ant-input-affix-wrapper {
+        padding: 0 !important;
+        border: none;
+        background: inherit;
+        border-radius: 15px !important;
+
+        &:focus {
+            box-shadow: none;
+            background-color: inherit;
+
+        }
+
+        &.ant-input-affix-wrapper-focused {
+            box-shadow: none;
+            border: none !important;
+            outline: none !important;
+            background-color: inherit;
+
+        }
+    }
+
+    .ant-input-affix-wrapper:focus-within {
+        background-color: inherit;
+    }
+
+    .ant-input-wrapper {
+        border-radius: 26px;
+    }
+
+    .ant-input-prefix {
+        background: inherit;
+        border-radius: 15px;
+        color: #697AAF;
+        padding-left: 5px;
+
+        .anticon svg {
+            width: 30px;
+            font-size: 20px;
+        }
+    }
+
+    .ant-input {
+        color: white;
+        font-size: 26px;
+        background: $theme-background-blue;
+        border: 0px;
+        outline: 0 !important;
+        border-color: white !important;
+        padding-bottom: 5px;
+        border-radius: 15px;
+        left: 5px;
+
+        &::placeholder {
+            color: #E2E3E4;
+        }
+    }
+
+    .mark::selection {
+        background: transparent;
+    }
+}
+
+.search-input {
+    height: 48px;
+    background: $theme-background-blue;
+    box-shadow: 0px 3px 20px #00000014 !important;
+    border-radius: 8px;
+
+    .ant-input-group>.ant-input-affix-wrapper:not(:last-child) .ant-input {
+        padding-left: 10px;
+        outline: none;
+    }
+
+    .ant-input-affix-wrapper {
+        padding: 0 !important;
+        border: none;
+        background: inherit;
+        border-radius: 15px !important;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.ant-input-affix-wrapper-focused {
+            box-shadow: none;
+            border: none !important;
+            outline: none !important;
+        }
+    }
+
+    .ant-input-affix-wrapper:focus-within {
+        background-color: inherit;
+    }
+
+    .ant-input-wrapper {
+        border-radius: 14px;
+    }
+
+    .ant-input-suffix {
+        background: inherit;
+        border-radius: 15px;
+
+        .anticon svg {
+            width: 30px;
+            font-size: 20px;
+            opacity: 0.8;
+        }
+    }
+
+    .ant-input {
+        height: 46px;
+        color: white;
+        font-size: 14px;
+        background: $theme-background-blue;
+        border: 0px;
+        outline: 0 !important;
+        border-color: white !important;
+        padding-bottom: 5px;
+        border-radius: 15px;
+        left: 10px;
+
+        &::placeholder {
+            color: #84919C;
+        }
+    }
+
+    .ant-input-group-addon {
+        border-radius: 14px;
+        border: 0px;
+
+        button {
+            border: 0px;
+            height: 48px;
+            width: 50px;
+            background: $theme-cyan;
+
+            svg {
+                margin-top: 5px;
+                color: #000;
+                transform: scale(1.2);
+            }
+
+            &:hover {
+                background: $theme-cyan !important;
+            }
+        }
+    }
+
+    .mark::selection {
+        background: transparent;
+    }
+}
+
+.input.ant-input {
+    padding-left: 20px;
+    background: #1F2332 0% 0% no-repeat padding-box !important;
+    letter-spacing: 0px;
+    border-radius: 26px !important;
+    height: 44px !important;
+    outline: none !important;
+    border: 1px solid #303853 !important;
+    z-index: 0;
+    font-weight: 500;
+    color: #fff !important;
+    padding: 10px 20px !important;
+
+    :hover {
+        box-shadow: none;
+    }
+
+    :focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+    &::placeholder {
+        opacity: 1 !important;
+        color: #70767E !important;
+    }
+}

@@ -1,0 +1,206 @@
+@import '@/styles/variables.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background: $light-blue;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+
+    >.container {
+        display: flex;
+        width: 100%;
+        padding: 0 30px;
+        max-width: $max-content-display-length;
+        justify-content: space-between;
+
+        .logo-search-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                cursor: pointer;
+                margin-right: 15px;
+
+                a img {
+                    width: 120px;
+                    height: auto;
+                }
+            }
+
+            .search {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                z-index: 1001;
+
+                .header-search-input {
+                    width: 400px;
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .menu-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+                cursor: pointer;
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+
+        .hamburger-menu {
+            display: none;
+        }
+    }
+}
+
+.header-drawer-header {
+    background: $light-blue !important;
+    border: none !important;
+
+    .ant-drawer-header-title {
+        .ant-drawer-close span {
+            color: #fff;
+
+        }
+
+        .ant-drawer-title {
+            color: #fff;
+            font-family: 'Montserrat';
+        }
+    }
+}
+
+.header-drawer-body {
+    background: $light-blue !important;
+    border: none !important;
+
+    .menu-item {
+        margin-bottom: 20px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+
+        a {
+            color: #fff;
+        }
+
+        .home-button {
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    background: $light-blue;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >.container {
+        display: flex;
+        width: 100%;
+        padding: 50px 30px;
+        padding-bottom: 0px;
+        max-width: $max-content-display-length;
+        justify-content: space-between;
+    }
+
+    .description {
+        color: #646975;
+        margin-top: 20px;
+    }
+
+    .section-title {
+        margin-top: 0px;
+        color: #fff;
+    }
+
+    .section-list {
+        .ant-list-item {
+            padding: 6px 0 !important;
+
+            a {
+                color: #646975;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    .social-media-icon {
+        font-size: 24px;
+        padding: 10px 10px 10px 0px;
+        color: #D8DFE7;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .copyrights {
+        border-top: 1px solid #000618;
+        padding: 20px 0;
+
+        .copyright-text {
+            margin: 0px;
+            color: #D8DFE7 !important;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:998px) {
+    .header {
+        .logo-search-container {
+            .logo a img {
+                width: 100px !important;
+                height: auto !important;
+            }
+
+            .search {
+                display: none !important;
+            }
+        }
+
+        .menu {
+            display: none !important;
+        }
+
+        .hamburger-menu {
+            color: #fff;
+            display: flex !important;
+            align-items: center;
+
+            svg {
+                width: 25px;
+                height: auto;
+            }
+        }
+    }
+}

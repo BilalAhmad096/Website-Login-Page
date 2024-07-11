@@ -1,0 +1,31 @@
+{
+  "name": "nextjs-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.17.2",
+    "@ant-design/icons": "^5.2.6",
+    "antd": "^5.10.0",
+    "axios": "^1.5.1",
+    "eslint-config-standard": "^17.1.0",
+    "lodash": "^4.17.21",
+    "next": "13.5.4",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.69.3"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "^13.5.4"
+  }
+}

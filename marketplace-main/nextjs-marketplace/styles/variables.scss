@@ -1,0 +1,30 @@
+@mixin wrapword() {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /*Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* css-3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+}
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+$theme-blue: #000618;
+$light-blue: #141929;
+$transparant-blue: #40ad4957;
+$theme-background-blue: #1f2332;
+$theme-cyan: #8ee7d8;
+$theme-bordr-gray: #e6e6e6;
+$theme-button-orange: #fdb256;
+$theme-warning-color: red;
+
+$max-content-display-length: 1380px;
+
+body {
+  user-select: none;
+}
